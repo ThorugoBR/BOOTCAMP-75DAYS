@@ -13,7 +13,6 @@ import org.springframework.data.elasticsearch.core.ElasticsearchEntityMapper;
 import org.springframework.data.elasticsearch.core.EntityMapper;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
-import javax.swing.text.html.parser.Entity;
 
 @Configuration
 @EnableElasticsearchRepositories(basePackages = "one.digital.innovation.experts.Product_catalog.repository")
