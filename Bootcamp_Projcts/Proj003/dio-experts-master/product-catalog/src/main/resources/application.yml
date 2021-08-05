@@ -2,7 +2,7 @@
 spring:
 
   application:
-    name: Product_Catalog
+    name: product-catalog
 
   cloud:
     config:

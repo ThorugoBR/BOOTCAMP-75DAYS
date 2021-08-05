@@ -2,7 +2,8 @@
 spring:
 
   application:
-    name: Product_Catalog
+    name:
+      service-discovery
 
   cloud:
     config:

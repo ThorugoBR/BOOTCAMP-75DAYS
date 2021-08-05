@@ -1,8 +1,8 @@
-
 spring:
 
   application:
-    name: Product_Catalog
+    name:
+      Service_Discovery
 
   cloud:
     config:
