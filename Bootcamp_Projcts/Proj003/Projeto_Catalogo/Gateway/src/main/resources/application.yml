@@ -1,0 +1,8 @@
+
+sprin:
+  application:
+    name: Gateway
+
+  cloud:
+    config:
+      uri:http://localhost:8888
