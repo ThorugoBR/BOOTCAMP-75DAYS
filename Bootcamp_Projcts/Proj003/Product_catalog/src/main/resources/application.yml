@@ -1,6 +1,6 @@
 spring:
   application:
-    name: product-catalog
+    name: Product_catalog
 
   cloud:
     config:
