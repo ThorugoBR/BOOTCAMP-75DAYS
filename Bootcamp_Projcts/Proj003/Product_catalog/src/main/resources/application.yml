@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: Product_catalog
-
-  cloud:
-    config:
-      uri:http://localhost:8081
