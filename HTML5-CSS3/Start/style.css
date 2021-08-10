@@ -1,14 +1,48 @@
+body{
+    background-color: rgba(211, 211, 211, 0.05);
+}
+
+
 #title, .subtitle, .post_title{
     color: crimson;
 }
+.post{
+    background-color: rgba(220, 20, 60, 0.034);
+    padding:0.5rem;
+    border: 0.02rem solid rgba(255, 0, 51, 0.938);
+    border-radius: 0.5rem;
+    margin: 0.05rem;
+}
 
+.img{
+    background-color: rgba(220, 20, 60, 0.616);
+    border: 0.04rem solid red;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem crimson;
+}
 .post_title{
     font-size: 18px;    
     font-style: italic;
 }
 
-#link_lang{
-    font-style: italic;
+.post_content{
+    background-color:rgba(150, 0, 0, 0.05);
+    border: 0.05rem solid rgba(255, 0, 0, 0.1);
+    border-radius: 0.5rem
+}
+
+.link_lang{
+    font-style: normal;
     color: blue;
-    font-size: large;
+    font-size: 18px;
+}
+
+.img_link{
+    border: 0.03rem dashed rgba(0, 255, 0, 0.657);
+    background-color: rgba(0, 155, 0, 0.657);
+    border-radius: 100%;
+}
+.footer{
+    color: rgba(0, 255, 0, 0.657);
+    padding:0.5rem;
 }
