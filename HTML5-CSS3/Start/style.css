@@ -38,6 +38,8 @@ body{
 }
 
 .img_link{
+    width: 3.2360679775rem;
+    height: 3.2360679775rem;
     border: 0.03rem dashed rgba(0, 255, 0, 0.657);
     background-color: rgba(0, 155, 0, 0.657);
     border-radius: 100%;
