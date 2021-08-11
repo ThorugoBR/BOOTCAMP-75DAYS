@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Config_Server" />
-        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Config_Server" />
@@ -13,9 +15,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Product_Catalog" />
-        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Product_Catalog" />
@@ -23,9 +26,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Service_Discovery" />
-        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Service_Discovery" />
@@ -33,9 +37,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/dio-experts-master/config-server" />
-        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/dio-experts-master/config-server" />
@@ -43,9 +48,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/dio-experts-master/gateway" />
-        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/dio-experts-master/gateway" />
@@ -53,9 +59,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/dio-experts-master/product-catalog" />
-        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/dio-experts-master/product-catalog" />
@@ -63,9 +70,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/dio-experts-master/service-discovery" />
-        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/dio-experts-master/service-discovery" />
@@ -73,9 +81,10 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/dio-experts-master/shopping-cart" />
-        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/dio-experts-master/shopping-cart" />
