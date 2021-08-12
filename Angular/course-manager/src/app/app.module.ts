@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 //import { countReset } from 'console';
 import { CourseListComponent } from './courses/course-list-component';
+import { StarComponent } from './star/star.componet';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CourseListComponent
+    CourseListComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule,
