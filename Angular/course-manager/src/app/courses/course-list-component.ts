@@ -28,7 +28,7 @@ export class CourseListComponent implements OnInit{
                 price:80.99,
                 code:'AG01',
                 duration:600,
-                rating:4.5,
+                rating:3.5,
                 releaseDate:'December,4,2020'
             }
         ]
