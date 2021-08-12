@@ -6,14 +6,14 @@ import { Course } from "./course";
     templateUrl:'./course-list-component.html'
 })
 export class CourseListComponent implements OnInit{
-  
+
     courses:Course[]=[];
     ngOnInit():void{
         this.courses=[
             {
                 id:1,
                 name:'Python',
-                imageUrl:'',
+                imageUrl:'./assets/Images/python.png',
                 price:99.99,
                 code:'py01',
                 duration:720,
@@ -24,7 +24,7 @@ export class CourseListComponent implements OnInit{
             {
                 id:2,
                 name:'Angular',
-                imageUrl:'',
+                imageUrl:'./assets/Images/angular.png',
                 price:80.99,
                 code:'AG01',
                 duration:600,
