@@ -1,31 +1,43 @@
 <h2>Course List</h2>
-<hr>
 
-<table class="table table-striped">
-    <thead>
+  <div class="formgrouprow">
+    <label class="col-sm-2 col-form-label">Filter By:</label>
 
-        <tr>
-            <th>Imagem</th>
-            <th>Course name</th>
-            <th>Code</th>
-            <th>Price</th>
-            <th>Rating</th>
-            <th>Release Date</th>
-            <th>Option</th>
-        </tr>
+    <div class="col-sm-10">
+      <input [(ngModel)]="filter" class="form-control">
+    </div>
 
-    </thead>
-    <tbody>
-        <tr *ngFor= "let course of courses">
-          <td><img [src]="course.imageUrl" width="40" height="" ></td>
-          <td>{{course.name}}</td>
-          <td>{{course.code}}</td>
-          <td>{{course.price}}</td>
-          <td>
-            <app-star [rating]= "course.rating"></app-star>
-          </td>
-          <td>{{course.releaseDate}}</td>
-          <td></td>
-        </tr>
-    </tbody>
-</table>
+
+  </div>
+
+  <table class="table table-striped">
+      <thead class="tblhead">
+          <tr>
+              <th>Imagem</th>
+              <th>Course name</th>
+              <th>Course description</th>
+              <th>Code</th>
+              <th>Price</th>
+              <th>Rating</th>
+              <th>Release Date</th>
+              <th>Option</th>
+          </tr>
+
+      </thead>
+      <tbody class="tbldata">
+          <tr *ngFor= "let course of filteredcourses">
+            <td><img [src]="course.imageUrl" width="40" height="40" ></td>
+            <td>{{course.name}}</td>
+            <td>{{course.description}}</td>
+            <td>{{course.code}}</td>
+            <td>{{course.price}}</td>
+            <td>
+              <app-star [rating]= "course.rating"></app-star>
+            </td>
+            <td>{{course.releaseDate}}</td>
+            <td></td>
+          </tr>
+      </tbody>
+  </table>
+
+
