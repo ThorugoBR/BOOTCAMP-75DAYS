@@ -1,9 +1,22 @@
 .tbldata{
   background-color: rgba(42, 42, 43, 0.048);
-  border: 0.01rem solid rgba(0, 183, 255, 0.411);
+  /* border: 0.01rem solid rgba(0, 183, 255, 0.411); */
 }
 
 .tblhead{
-  background-color: rgba(40, 40, 50, 0.09);
-  border: 0.015rem solid rgba(0, 185, 255, 0.42);
+  background-color: rgba(21, 21, 26, 0.329);
+  /* border: 0.015rem solid rgba(0, 185, 255, 0.42); */
+}
+
+
+.form-control{
+  background-color: rgba(0, 255, 98, 0.075);
+  border-radius: 0.5rem;
+}
+
+
+.table{
+  border: 0.001rem solid gray;
+  background-color: rgba(42, 43, 43, 0.048);;
+  border-radius: 1rem;
 }
