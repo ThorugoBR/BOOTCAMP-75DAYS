@@ -10,7 +10,6 @@ export class CourseListComponent implements OnInit{
 
     filteredcourses:Course[]=[];
     _courses:Course[]=[];
-
     _filterBy!: string;
 
 

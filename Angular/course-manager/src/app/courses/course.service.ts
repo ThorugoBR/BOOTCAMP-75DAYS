@@ -8,9 +8,16 @@ import { Observable } from 'rxjs';
     providedIn: 'root'
 })
 export class CourseService {
-  retrieveAll():Course[]{
+
+  retrieveAll(): Course[]{
     return COURSES;
   }
+
+  retrieveById(id:number): Course {
+    return COURSES.find((courseIterator: Course)=> courseIterator.id === id)!;
+
+  }
+
     // private coursesUrl: string = 'http://localhost:3100/api/courses';
 
     // constructor(private httpClient: HttpClient) { }
