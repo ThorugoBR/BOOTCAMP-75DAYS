@@ -1,3 +1,4 @@
+import { error, stringify } from "@angular/compiler/src/util";
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 
@@ -5,13 +6,13 @@ import { ActivatedRoute } from "@angular/router";
   templateUrl:'./course-info.component.html'
 })
 export class CourseInfoComponent implements OnInit {
-  courseId!:number;
+  courseId: number | undefined;
 
   constructor(private activatedRoute: ActivatedRoute){ }
 
 
 ngOnInit():void{
-  this.courseId= this.activatedRoute.snapshot.paramMap.get('id');
+  this.courseId = +this.activatedRoute.snapshot.paramMap.get('id')!;
 }
 
 
