@@ -1,3 +1,4 @@
+import { error } from "@angular/compiler/src/util";
 import { Component, OnInit } from "@angular/core";
 import { Course } from "./course";
 import { CourseService } from "./course.service";
@@ -17,10 +18,19 @@ export class CourseListComponent implements OnInit{
 
  }
     ngOnInit():void{
-      this._courses=this.courseService.retrieveAll();
-      this.filteredcourses=this._courses;
+      this.retrieveAll();
     }
 
+    retrieveAll():void{
+      this.courseService.retrieveAll().subscribe({
+        next: courses=>{
+          this._courses=courses;
+          this.filteredcourses=this._courses;
+        },
+        error:  err=> console.log('Error',err)
+      });
+
+    }
     set filter(value:string){
       this._filterBy=value;
 
