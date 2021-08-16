@@ -26,7 +26,7 @@ import { CourseInfoComponent } from './courses/course-info.component';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
-      {path:'course',component:CourseListComponent},
+      {path:'courses',component:CourseListComponent},
       {path:'courses/info/:id',component:CourseInfoComponent},
       {path:'',redirectTo: 'courses',pathMatch:'full'},
       {path:'**', component: Error404Component}
