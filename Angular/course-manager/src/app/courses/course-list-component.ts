@@ -33,7 +33,6 @@ export class CourseListComponent implements OnInit{
     }
     set filter(value:string){
       this._filterBy=value;
-
       this.filteredcourses=this._courses.filter((course:Course) => course.name.toLowerCase().indexOf(this._filterBy.toLowerCase())>-1);
     }
 
