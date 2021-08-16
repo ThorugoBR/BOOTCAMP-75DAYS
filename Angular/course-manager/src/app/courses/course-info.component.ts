@@ -7,10 +7,9 @@ import { CourseService } from "./course.service";
   templateUrl:'./course-info.component.html'
 })
 export class CourseInfoComponent implements OnInit {
-  course!: Course
+  course!: Course;
 
   constructor(private activatedRoute: ActivatedRoute, private CourseService: CourseService ){ }
-
 
 ngOnInit():void{
   this.CourseService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id')!).subscribe({
@@ -20,7 +19,9 @@ ngOnInit():void{
 
 }
  save():void{
-   this.CourseService.save(this.course);
+   this.CourseService.save(this.course).subscribe({
+     next: course =>console.log('Saved with sucess',course),
+   });
  }
 
 }
