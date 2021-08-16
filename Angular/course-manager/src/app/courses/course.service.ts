@@ -9,7 +9,6 @@ import { CourseInfoComponent } from './course-info.component';
 })
 export class CourseService {
 
-
   private coursesUrl: string ='http://localhost:3100/api/courses';
 
   constructor(private HttpClient:HttpClient){
