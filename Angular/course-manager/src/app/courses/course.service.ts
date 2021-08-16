@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CourseInfoComponent } from './course-info.component';
 
-
 @Injectable({
     providedIn: 'root'
 })
@@ -23,20 +22,19 @@ export class CourseService {
 
   retrieveById(id:number):Observable<Course> {
     return this.HttpClient.get<Course>(`${this.coursesUrl}/$(id)`);
-
   }
 
-  save(course:Course): void{
+  save(course:Course): Observable<Course>{
     if (course.id){
-      const index=COURSES.findIndex((CourseIterator: Course)=> CourseIterator.id===course.id);
-      COURSES[index]= course;
-    }
-  }
+      return this.HttpClient.put<Course>(`${this.coursesUrl}/${course.id}`,course);
+  } else{
+    return this.HttpClient.post<Course>(`${this.coursesUrl}`,course);
 
+  }
 
 }
 
-var COURSES: Course[] = [
+COURSES: Course[] = [
     {
         id: 1,
         name: 'Angular: CLI',
@@ -92,4 +90,6 @@ var COURSES: Course[] = [
         price: 56.99,
         imageUrl: './assets/Images/animations.png',
     }
-];
+]
+
+}
