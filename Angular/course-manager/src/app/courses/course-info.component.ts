@@ -1,4 +1,3 @@
-import { error } from "@angular/compiler/src/util";
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { Course } from "./course";
@@ -13,7 +12,7 @@ export class CourseInfoComponent implements OnInit {
 
 ngOnInit():void{
   this.CourseService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id')!).subscribe({
-      next: course =>this.course =course,
+      next: course =>this.course = course,
       error: err => console.log('Error',err)
   });
 
@@ -21,7 +20,18 @@ ngOnInit():void{
  save():void{
    this.CourseService.save(this.course).subscribe({
      next: course =>console.log('Saved with sucess',course),
-   });
+     error: err => console.log('Error', err)
+    });
  }
+ deleteById(courseId: number): void {
+  this.CourseService.deleteById(courseId).subscribe({
+      next: () => {
+          console.log('Deleted with success');
+          // this.retrieveAll();
+      },
+      error:err=> console.log('Error',err)
+  })
+}
+
 
 }
