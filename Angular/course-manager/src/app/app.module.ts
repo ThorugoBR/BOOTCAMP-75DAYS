@@ -10,6 +10,7 @@ import { ReplacePipe } from './pipe/replace.pipe';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { Error404Component } from './error-404/error-404.component';
 import { CourseInfoComponent } from './courses/course-info.component';
+import { CourseModule } from './courses/course.module';
 
 
 @NgModule({
@@ -23,7 +24,6 @@ import { CourseInfoComponent } from './courses/course-info.component';
     CourseInfoComponent,
   ],
   imports: [
-    HttpClientModule,
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
@@ -32,7 +32,8 @@ import { CourseInfoComponent } from './courses/course-info.component';
       {path:'',redirectTo: 'courses',pathMatch:'full'},
       {path:'**', component: Error404Component}
     ]) ,
-
+    HttpClientModule,
+    CourseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
