@@ -23,15 +23,5 @@ ngOnInit():void{
      error: err => console.log('Error', err)
     });
  }
- deleteById(courseId: number): void {
-  this.CourseService.deleteById(courseId).subscribe({
-      next: () => {
-          console.log('Deleted with success');
-          // this.retrieveAll();
-      },
-      error:err=> console.log('Error',err)
-  })
-}
-
 
 }

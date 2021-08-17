@@ -1,11 +1,10 @@
-import { error } from "@angular/compiler/src/util";
 import { Component, OnInit } from "@angular/core";
 import { Course } from "./course";
 import { CourseService } from "./course.service";
 
 @Component({
     templateUrl:'./course-list.component.html',
-    styleUrls:['./table.css']
+    styleUrls:['./table.css'],
 })
 export class CourseListComponent implements OnInit{
     filteredCourses:Course[]=[];

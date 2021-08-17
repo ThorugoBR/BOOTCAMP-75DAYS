@@ -20,7 +20,6 @@ import { CourseModule } from './courses/course.module';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     RouterModule.forRoot([
       {path:'courses',component:CourseListComponent},
       {path:'courses/info/:id',component:CourseInfoComponent},
