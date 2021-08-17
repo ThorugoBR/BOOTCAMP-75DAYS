@@ -17,11 +17,9 @@ import { CourseModule } from './courses/course.module';
   declarations: [
     AppComponent,
     StarComponent,
-    CourseListComponent,
     ReplacePipe,
     NavBarComponent,
     Error404Component,
-    CourseInfoComponent,
   ],
   imports: [
     BrowserModule,
