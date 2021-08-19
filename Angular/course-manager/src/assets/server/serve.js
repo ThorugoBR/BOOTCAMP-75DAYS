@@ -131,6 +131,6 @@ var COURSES = [
     code: 'VBA-1905',
     rating: 5,
     price: 1500.00,
-    imageUrl: './assets/Images/vba.png',
+    imageUrl: './assets/Images/vba.png' ,
 }
 ];
