@@ -5,11 +5,10 @@ import { CourseService } from "./course.service";
 @Component({
   templateUrl:'./course-info.component.html'
 })
+
 export class CourseInfoComponent implements OnInit {
   course!: Course;
-
   constructor(private activatedRoute: ActivatedRoute, private CourseService: CourseService ){ }
-
 ngOnInit():void{
   this.CourseService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id')!).subscribe({
       next: course =>this.course = course,

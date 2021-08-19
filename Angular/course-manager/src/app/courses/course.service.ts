@@ -14,7 +14,7 @@ export class CourseService {
 
   retrieveAll(): Observable<Course[]>{return this.HttpClient.get<Course[]>(this.coursesUrl);}
 
-  retrieveById(id:number):Observable<Course> {return this.HttpClient.get<Course>(`${this.coursesUrl}/$(id)`);}
+  retrieveById(id:number):Observable<Course> {return this.HttpClient.get<Course>(`${this.coursesUrl}/${id}`);}
 
   save(course:Course): Observable<Course>{
       if (course.id) {

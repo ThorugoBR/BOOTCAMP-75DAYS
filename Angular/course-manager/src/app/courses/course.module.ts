@@ -21,7 +21,7 @@ import { CourseListComponent } from "./course-list.component";
     FormsModule,
     RouterModule.forChild([
       {  path: 'courses', component :CourseListComponent},
-      {  path: 'courses/info/:id', component :CourseInfoComponent},
+      {  path: 'courses/info/:id', component : CourseInfoComponent},
 
     ]),
 
