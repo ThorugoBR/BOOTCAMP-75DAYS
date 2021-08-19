@@ -110,5 +110,27 @@ var COURSES = [
         rating: 5,
         price: 56.99,
         imageUrl: './assets/Images/animations.png',
-    }
+    },
+    {
+      id: 6,
+      name: 'Python: Scripts',
+      releaseDate: 'December 25, 2019',
+      description: 'Neste curso, os alunos irão obter um conhecimento aprofundado sobre Pyhton Scripts',
+      duration: 160,
+      code: 'PYT-3189',
+      rating: 5,
+      price: 65.99,
+      imageUrl: './assets/Images/python.png',
+  },
+  {
+    id: 6,
+    name: 'VBA: Visual Basic for Application',
+    releaseDate: 'May 25, 2005',
+    description: 'Neste curso os alunos irão aprender como gerar scripts de automação com Visual Basic for Application da Microsoft',
+    duration: 360,
+    code: 'VBA-1905',
+    rating: 5,
+    price: 1500.00,
+    imageUrl: './assets/Images/vba.png',
+}
 ];
