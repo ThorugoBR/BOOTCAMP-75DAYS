@@ -6,7 +6,6 @@ import { ListagemFilmesComponent } from './filmes/listagem-filmes/listagem-filme
 import { VisualizarFilmesComponent } from './filmes/visualizar-filmes/visualizar-filmes.component';
 
 const routes: Routes = [
-
   {
       path: '',
       redirectTo: 'filmes',
@@ -40,7 +39,6 @@ const routes: Routes = [
     ]
   },
   { path: '**', redirectTo: 'filmes' },
-
 ];
 
 @NgModule({

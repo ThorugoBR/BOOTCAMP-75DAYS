@@ -15,7 +15,6 @@ export class TopoComponent implements OnInit {
   ngOnInit() {
   }
 
-
   openSideNav() {
     this.sidenav.open();
   }

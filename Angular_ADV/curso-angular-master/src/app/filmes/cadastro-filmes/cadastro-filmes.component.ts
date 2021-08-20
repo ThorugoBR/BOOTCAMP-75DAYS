@@ -62,17 +62,17 @@ export class CadastroFilmesComponent implements OnInit {
     this.cadastro.reset();
   }
 
-  private criarFormulario(filme: Filme): void {
+   private criarFormulario(filme: Filme): void {
     this.cadastro = this.fb.group({
-      titulo: [filme.titulo, [Validators.required, Validators.minLength(2), Validators.maxLength(256)]],
-      urlFoto: [filme.urlFoto, [Validators.minLength(10)]],
+      titulo: [filme.titulo, [Validators.required, Validators.minLength(5), Validators.maxLength(300)]],
+      urlFoto: [filme.urlFoto, [Validators.minLength(8)]],
       dtLancamento: [filme.dtLancamento, [Validators.required]],
       descricao: [filme.descricao],
       nota: [filme.nota, [Validators.required, Validators.min(0), Validators.max(10)]],
       urlIMDb: [filme.urlIMDb, [Validators.minLength(10)]],
       genero: [filme.genero, [Validators.required]]
     });
-  }
+   }
 
   private criarFilmeEmBranco(): Filme {
     return {
