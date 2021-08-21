@@ -8,26 +8,28 @@ import { InputSelectComponent } from './input-select/input-select.component';
 import { MaterialModule } from '../../material/material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     InputTextComponent,
     InputNumberComponent,
     InputDateComponent,
     InputTextareaComponent,
-    InputSelectComponent
+    InputSelectComponent,
+
   ],
   imports: [
     CommonModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   exports: [
     InputTextComponent,
     InputNumberComponent,
     InputDateComponent,
     InputTextareaComponent,
-    InputSelectComponent
+    InputSelectComponent,
   ]
 })
 export class CamposModule { }
