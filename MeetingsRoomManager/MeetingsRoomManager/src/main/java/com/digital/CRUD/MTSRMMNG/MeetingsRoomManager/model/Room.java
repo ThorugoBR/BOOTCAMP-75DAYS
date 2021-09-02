@@ -59,7 +59,7 @@ public class Room{
         this.date = date;
     }
 
-    @Column(name= "StartHour",nullable = false)
+    @Column(name= "startHour",nullable = false)
     public String getStartHour() {
         return startHour;
     }
@@ -68,7 +68,7 @@ public class Room{
         this.startHour = startHour;
     }
 
-    @Column(name= "EndHour",nullable = false)
+    @Column(name= "endHour",nullable = false)
     public String getEndHour() {
         return endHour;
     }
@@ -79,7 +79,7 @@ public class Room{
 
 @Override
 public String toString(){
-    return "Room [id="+id+",name="+name+",StartHour="+startHour+",EndHour="+endHour+"]";
+    return "Room [id="+id+",name="+name+",startHour="+startHour+",endHour="+endHour+"]";
 }
 
 }
