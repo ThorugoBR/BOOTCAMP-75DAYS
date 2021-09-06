@@ -1,28 +1,27 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RoomComponent } from './room/room.component';
 import { CreateRoomComponent } from './create-room/create-room.component';
 import { RoomDetailsComponent } from './room-details/room-details.component';
 import { RoomListComponent } from './room-list/room-list.component';
+import { HttpClientModule } from '@angular/common/http';
 import { UpdateRoomComponent } from './update-room/update-room.component';
-
 @NgModule({
   declarations: [
     AppComponent,
-    RoomComponent,
     CreateRoomComponent,
+    UpdateRoomComponent,
     RoomDetailsComponent,
     RoomListComponent,
-    UpdateRoomComponent
+    RoomListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
